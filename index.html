@@ -70,12 +70,8 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
 					<li>
-                        <a class="page-scroll" href="myFunction()">feedback</a>
-                    <script>
-							function myFunction() {
-							window.open("http://www.akshayngp.com", "_blank", "toolbar=NO, scrollbars=NO, resizable=No, top=1000, left=1000, width=800, height=800");
-							}
-							</script>
+                      <a id="demo">Feedback</a>
+                   
 					</li>               
 			   </ul>
             </div>
@@ -83,7 +79,13 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+<script>
+document.getElementById("demo").onclick = function() {myFunction()};
 
+function myFunction() {
+     window.open("http://akshayngp.com/feedback.html", "_blank", "toolbar=NO, scrollbars=NO, resizable=No, top=1000, left=1000, width=800, height=800");
+}
+</script>
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -253,9 +255,9 @@
         </div>
     </section>
 -->
+   
     
-
-    <section id="contact">
+	<section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
