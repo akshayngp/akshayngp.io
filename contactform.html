@@ -1,97 +1,46 @@
-<form name="contactform" method="post" action="send_form_email.php">
- 
-<table width="450px">
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="first_name">First Name *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="first_name" maxlength="50" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top"">
- 
-  <label for="last_name">Last Name *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="last_name" maxlength="50" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="email">Email Address *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="email" maxlength="80" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="telephone">Telephone Number</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="telephone" maxlength="30" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="comments">Comments *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td colspan="2" style="text-align:center">
- 
-  <input type="submit" value="Submit">   
- 
- </td>
- 
-</tr>
- 
-</table>
- 
-</form>
+<form action="send_form_email.php" method="post" id="spaceing" data-abide>
+        <div class="form-bg">
+            <div class="row">
+                <div id="name" class="large-6 medium-6 small-12 columns">
+                    <label> <h5>Name</h5>
+                        <input type="text" name="yourName" placeholder="What is you're name?"></input>
+                    </label>
+                </div>
+
+                <div id="email" class="large-6 medium-6 small-12 columns">
+                    <label><h5>Email</h5>
+                        <input type="email" name="yourEmail" placeholder="Please enter in you're email."required></input>
+                    </label>
+                    <small class="error">An email Address is required.</small>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div id="phone"class="large-6 medium-6 small-12 columns">
+                        <label><h5>Phone</h5>
+                            <input type="text" name="yourPhone" placeholder="Please enter you're phone number."></input>
+                        </label>
+                    </div>
+
+                    <div id="location" class="large-6 medium-6 small-12 columns">
+                        <label><h5>Location</h5>
+                            <input type="text" name="yourLocate" placeholder="Where on Oahu are you currently living?"></input>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="message-area" class="large-12 medium-12 small-12 columns">
+                        <label><h5>Message</h5>
+                            <textarea id="message" name="yourMessage" placeholder="Please tell us about you're plumbing issues."></textarea>
+                        </label>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div id="submit" class="large-3 medium-3 small-3 columns">
+                    <button name="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
